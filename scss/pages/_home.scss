@@ -1,0 +1,23 @@
+// Home Page
+.home-page{
+    background-color: $bg-white-red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include for-phone{
+        background-color: $bg-dark-red;
+    }
+
+    @include for-tablet{
+        background-color: $bg-dark-pink;
+    }
+
+    @include for-desktop{
+        background-color: $bg-dark-gray;
+    }
+} 

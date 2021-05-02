@@ -1,0 +1,18 @@
+// Media Query
+@mixin for-phone{
+    @media only screen and (min-width: $large-phone){
+        @content;
+    }
+}
+
+@mixin for-tablet{
+    @media only screen and (min-width: $tablet){
+        @content;
+    }
+}
+
+@mixin for-desktop{
+    @media only screen and (min-width: $desktop){
+        @content;
+    }
+}

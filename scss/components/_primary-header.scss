@@ -1,0 +1,18 @@
+// Primary Header
+.primary-header{
+    font-size: $large-heading;
+    font-weight: bold;
+    color: $bg-white;
+    display: block;
+
+}
+
+.p-section{
+    font-size: $medium-heading;
+    font-weight: bold;
+    color: $bg-white;
+    margin: 20px;
+    span{
+        color: $bg-light-blue;
+    }
+}
