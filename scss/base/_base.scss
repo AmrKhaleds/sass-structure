@@ -1,12 +1,45 @@
-// Base
-*{
-    margin: 0;
+// Base -reset
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-size: $medium-heading;
     font-weight: normal;
     font-family: $roboto, $san-serif;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    overflow: auto;
+}
+
+
+
+// This is a Normalize that makes browsers render all elements more consistently
+// and in line with modern standards.

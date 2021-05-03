@@ -1,14 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-* {
-  margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 24px;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  overflow: auto;
 }
 
 .home-page {
@@ -54,12 +81,7 @@ body {
   margin: 20px;
 }
 
-.h2-section {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-span {
+.p-section span {
   color: #5858fc;
 }
 /*# sourceMappingURL=style.css.map */
