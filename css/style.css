@@ -49,21 +49,27 @@ textarea {
   flex-direction: column;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 320px) {
   .home-page {
     background-color: #d63031;
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 768px) {
   .home-page {
     background-color: #e84393;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 960px) {
   .home-page {
     background-color: #2d3436;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-page {
+    background-color: #2b2b83;
   }
 }
 
