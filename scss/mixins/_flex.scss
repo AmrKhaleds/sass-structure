@@ -1,0 +1,36 @@
+@mixin flex-variant($display, $direction: false, $align: false, $justify: false, $wrap: false, $flow: false) {
+    display: $display;
+  
+    @if $direction {
+        flex-direction: $direction;
+    }
+  
+    @if $align {
+        align-items: $align;
+    }
+  
+    @if $justify {
+        justify-content: $justify;
+    }
+  
+    @if $wrap {
+        flex-wrap: $wrap;
+    }
+
+    @if $flow {
+        flex-flow: $flow;
+    }
+}
+  
+@mixin flex($direction: false, $align: false, $justify: false, $wrap: false, $flow: false) {
+    @include flex-variant(flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap, $flow: $flow);
+}
+  
+@mixin inline-flex($direction: false, $align: false, $justify: false, $wrap: false, $flow: false) {
+    @include flex-variant(inline-flex, $direction: $direction, $align: $align, $justify: $justify, $wrap: $wrap, $flow: $flow);
+}
+
+
+
+// To use this function, use @incloud to call
+// Example @include flex($direction: row, $align: center)
