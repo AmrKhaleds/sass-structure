@@ -1,0 +1,123 @@
+// Grid 
+@mixin grid-system($display,
+                    $grid: false,
+                    $t-columns: flase,
+                    $t-rows: false, 
+                    $column-g: false,
+                    $row-g: false,
+                    $t-areas: false, 
+                    $template: false,
+                    $gap: false,
+                    $justify-i: false,
+                    $justify-c: flase,
+                    $align-i: false,
+                    $align-c: false,
+                    $a-columns: false,
+                    $a-rows: flase,
+                    $a-flow: false){
+
+    display: $display;
+
+    @if $grid{grid: $grid;}
+    
+    @if $t-columns{grid-template-columns: $t-columns;}
+    
+    @if $t-rows{grid-template-rows: $t-rows;}
+    
+    @if $column-g{column-gap: $column-g;}
+    
+    @if $row-g{row-gap: $row-g;}
+    
+    @if $t-areas{grid-template-areas: $t-areas;}
+    
+    @if $template{grid-template: $template;}
+    
+    @if $gap{gap: $gap;}
+    
+    @if $justify-i{justify-items: $justify-i;}
+    
+    @if $justify-c{justify-content: $justify-c;}
+    
+    @if $align-i{align-items: $align-i;}
+    
+    @if $align-c{align-content: $align-c;}
+    
+    @if $a-columns{grid-auto-columns: $a-columns;}
+    
+    @if $a-rows{ grid-auto-rows: $a-rows;}
+    
+    @if $a-flow{grid-auto-flow: $a-flow;}
+
+}
+
+@mixin grid($grid: false,
+            $t-columns: flase,
+            $t-rows: false, 
+            $column-g: false,
+            $row-g: false,
+            $t-areas: false, 
+            $template: false,
+            $gap: false,
+            $justify-i: false,
+            $justify-c: flase,
+            $align-i: false,
+            $align-c: false,
+            $a-columns: false,
+            $a-rows: flase,
+            $a-flow: false){
+    
+    @include grid-system(grid,
+                        $t-columns: $t-columns,
+                        $t-rows: $t-rows, 
+                        $column-g: $column-g,
+                        $row-g: $row-g,
+                        $t-areas: $t-areas, 
+                        $template: $template,
+                        $gap: $gap,
+                        $justify-i: $justify-i,
+                        $justify-c: $justify-c,
+                        $align-i: $align-i,
+                        $align-c: $align-c,
+                        $a-columns: $a-columns,
+                        $a-rows: $a-rows,
+                        $a-flow: $a-flow);
+}
+
+@mixin inline-grid($grid: false,
+                    $t-columns: flase,
+                    $t-rows: false, 
+                    $column-g: false,
+                    $row-g: false,
+                    $t-areas: false, 
+                    $template: false,
+                    $gap: false,
+                    $justify-i: false,
+                    $justify-c: flase,
+                    $align-i: false,
+                    $align-c: false,
+                    $a-columns: false,
+                    $a-rows: flase,
+                    $a-flow: false){
+    
+    @include grid-system(inline-grid,
+                        $t-columns: $t-columns,
+                        $t-rows: $t-rows, 
+                        $column-g: $column-g,
+                        $row-g: $row-g,
+                        $t-areas: $t-areas, 
+                        $template: $template,
+                        $gap: $gap,
+                        $justify-i: $justify-i,
+                        $justify-c: $justify-c,
+                        $align-i: $align-i,
+                        $align-c: $align-c,
+                        $a-columns: $a-columns,
+                        $a-rows: $a-rows,
+                        $a-flow: $a-flow);
+}
+
+
+
+// To use this function, use @includen to call
+// Example  @include grid($t-columns: 50px 1fr, $t-rows: 10px);
+// #2       @include inline-grid($justify-i: center, $align-i: center)

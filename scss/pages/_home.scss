@@ -9,15 +9,19 @@
     justify-content: center;
     flex-direction: column;
 
-    @include for-phone{
+    @include sm{
         background-color: $bg-dark-red;
     }
 
-    @include for-tablet{
+    @include md{
         background-color: $bg-dark-pink;
     }
 
-    @include for-desktop{
+    @include lg{
         background-color: $bg-dark-gray;
+    }
+
+    @include xl{
+        background-color: $bg-dark-blue;
     }
 } 
